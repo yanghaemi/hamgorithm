@@ -10,14 +10,14 @@ public class Main {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		int T = Integer.parseInt(br.readLine());
 		for(int tc=1;tc<=T;tc++) {
-			Integer originN = Integer.parseInt(br.readLine());
+			int originN = Integer.parseInt(br.readLine());
 
-			Integer num = 1;
+			int num = 1;
 			Set<Character> s = new HashSet<>();
-			
+
 			while(true) {
-				Integer multipleN = originN * num;
-				String N = multipleN.toString();
+				int multipleN = originN * num;
+				String N = String.valueOf(multipleN);
 				int n = N.length();	
 				for(int i =0;i<n;i++) {
 					s.add(N.charAt(i));
